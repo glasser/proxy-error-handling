@@ -1,0 +1,8 @@
+{
+  "name": "proxy-error-handling",
+  "version": "0.0.0",
+  "dependencies": {
+    "faye-websocket": "0.7.2",
+    "http-proxy": "1.0.1"
+  }
+}
