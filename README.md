@@ -1,3 +1,5 @@
+# Reproduction for [nodejitsu/node-http-proxy#559](https://github.com/nodejitsu/node-http-proxy/issues/559)
+
 When using Node http-proxy 1.0, it is difficult to close the proxy/server socket
 in response to an error on the client/proxy socket.
 
