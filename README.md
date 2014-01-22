@@ -11,14 +11,10 @@ due to network changes.  This repo demonstrates the issue.
 
 You will need to have two computers, ideally on the same network, where the
 second can reach the first by IP. (A phone with a reasonably recent OS works
-fine for the second computer.) On the first, open two shells:
-
-    shell1$ npm install
-    # Run a simple proxy server on port 8001 that forwards to port 8000.
-    shell1$ node proxy.js
-    # Run a websocket server on port 8000 which displays how many clients
-    # are connected. It will tells you the IP to connect the second device.
-    shell2$ node server.js
+fine for the second computer.) On the first, run `npm install && node server.js`.
+This will run a simple proxy server on port 8001 that forwards to port 8000,
+and a websocket server on port 8000 which displays how many clients
+are connected. It will tells you the IP to connect the second device.
 
 Open the proxy URL on a second device. You should see the server print
 `OPEN, currently 1`.
